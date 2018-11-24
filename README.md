@@ -37,7 +37,7 @@ allprojects {
 Step 2. Add the dependency
 ```java
 dependencies {
-        implementation 'com.github.mukeshsolanki:android-otpview-pinview:<latest-version>'
+        implementation 'com.github.ibogolyubskiy:OtpView:<latest-version>'
 }
 ```
 
