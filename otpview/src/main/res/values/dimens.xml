@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright 2018 Mukesh Solanki
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,9 +15,9 @@
   -->
 
 <resources>
-  <dimen name="otp_view_item_size">48dp</dimen>
-  <dimen name="otp_view_item_radius">5dp</dimen>
-  <dimen name="otp_view_item_spacing">5dp</dimen>
-  <dimen name="otp_view_item_line_width">2dp</dimen>
-  <dimen name="otp_view_cursor_width">2dp</dimen>
+    <dimen name="otp_view_item_size">48dp</dimen>
+    <dimen name="otp_view_item_radius">5dp</dimen>
+    <dimen name="otp_view_item_spacing">5dp</dimen>
+    <dimen name="otp_view_item_line_width">2dp</dimen>
+    <dimen name="otp_view_cursor_width">2dp</dimen>
 </resources>
