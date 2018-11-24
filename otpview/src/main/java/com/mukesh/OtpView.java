@@ -761,6 +761,10 @@ public class OtpView extends AppCompatEditText {
         updateCursorHeight();
     }
 
+    public void clear() {
+        setText(null);
+    }
+
     public void setOtpCompletionListener(OnOtpCompletionListener otpCompletionListener) {
         this.onOtpCompletionListener = otpCompletionListener;
     }

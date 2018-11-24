@@ -11,7 +11,9 @@ import com.mukesh.OtpView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener,
         OnOtpCompletionListener {
-    private Button validateButton;
+
+    private Button validate;
+    private Button clear;
     private OtpView otpView;
 
     @Override
@@ -23,19 +25,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onClick(View v) {
-        if (v.getId() == R.id.validate_button) {
-            Toast.makeText(this, otpView.getText(), Toast.LENGTH_SHORT).show();
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.validate:
+                Toast.makeText(this, otpView.getText(), Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.clear:
+                otpView.clear();
+                break;
+            default:
+                break;
         }
     }
 
     private void initializeUi() {
         otpView = findViewById(R.id.otp_view);
-        validateButton = findViewById(R.id.validate_button);
+        validate = findViewById(R.id.validate);
+        clear = findViewById(R.id.clear);
     }
 
     private void setListeners() {
-        validateButton.setOnClickListener(this);
+        validate.setOnClickListener(this);
+        clear.setOnClickListener(this);
         otpView.setOtpCompletionListener(this);
     }
 

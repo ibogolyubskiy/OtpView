@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     android:padding="@dimen/std_margin"
     tools:context="com.mukesh.app.MainActivity">
 
@@ -34,15 +35,26 @@
         android:layout_marginTop="72dp"
         android:inputType="number"
         app:itemCount="6"
+        android:itemBackground="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
         app:lineColor="@color/colorPrimary"
         app:viewType="line" />
 
     <Button
-        android:id="@+id/validate_button"
+        android:id="@+id/clear"
+        android:text="@string/clear"
+        android:layout_marginTop="36dp"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:id="@+id/validate"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/validate"
         android:textColor="@android:color/white" />
 
